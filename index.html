@@ -163,7 +163,7 @@
           <div class="col-3 subheading text-center"><span class="count h2" id="coffee"></span>Litres de café bus</div>
         </div>
         <div class="subheading mb-3">Qualités</div>
-        <ul class="fa-ul mb-0">
+        <ul class="fa-ul mb-5">
           <li>
             <i class="fa-li fa fa-check"></i>
             Pédagogie</li>
@@ -180,6 +180,10 @@
             <i class="fa-li fa fa-check"></i>
             Supports de cours</li>
         </ul>
+        <div class="subheading mb-3"><a href="#" id="toogleformations">Détail des formations dispensées <i
+              class="fas fa-chevron-circle-down" id="down"></i><i class="fas fa-chevron-circle-up" id="up"></i></a>
+        </div>
+        <ul class="fa-ul mb-0" id="formations"></ul>
 
 
       </div>
@@ -380,23 +384,23 @@
     })
 
     const CURSUS = [
-      { name: "Full Stack PHP", days: 52, trainees: 9 }, // Septembre - Novembre 2017 Marseille Softeam OK
-      { name: "Javascript", days: 10, trainees: 13 }, // Décembre 2017 Aix Softeam OK
-      { name: "Full Stack Java", days: 40, trainees: 12 }, // Octobre - Décembre 2018 OK
-      { name: "Amoa", days: 13, trainees: 9 }, // Juin 2019 Aix M2I
-      { name: "Full Stack Java", days: 5, trainees: 7 }, // Juillet 2019 ???
-      { name: "Devops", days: 9, trainees: 7 }, // Juillet - Aout 2019 Aix M2I OK
-      { name: "Dev mobile", days: 3, trainees: 1 }, // Septembre 2019 Aix M2I
-      { name: "Angular", days: 3, trainees: 1 }, // Octobre 2019 - ?? Vitrolles Alten
-      { name: "Javascript", days: 4, trainees: 1 }, // Novembre 2019 Aix M2I
-      { name: "Javascript", days: 10, trainees: 7 }, //Novembre - Décembre 2019 St Mandrier
-      { name: "NodeJS & Angular", days: 5 + 19 + 20, trainees: 12 }, // Décembre 2019 - Février 2020 Softeam Aix
-      { name: "Angular", days: 5, trainees: 4 }, // Mars 2020, M2I
-      { name: "Angular", days: 5, trainees: 7 }, // Avril 2020, Télétravail
-      { name: "ReactJS", days: 3, trainees: 7 }, // Avril 2020, Télétravail
-      { name: "ReactJS & VueJS", days: 5, trainees: 4 }, // Mai 2020, Télétravail
-      { name: "ReactJS", days: 4, trainees: 10 }, // Juin 2020, Télétravail
-      { name: "Angular", days: 3, trainees: 6 }, // Juin 2020, Télétravail
+      { name: "Full Stack PHP", days: 52, trainees: 9, date: "Septembre à Novembre 2017 ", place: "Marseille", company: "Softeam" },
+      { name: "Javascript", days: 10, trainees: 13, date: "Décembre 2017", place: "Aix-en-Provence", company: "Softeam" },
+      { name: "Full Stack Java", days: 40, trainees: 12, date: "Octobre à Décembre 2018", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Amoa", days: 13, trainees: 9, date: "Juin 2019", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Full Stack Java", days: 5, trainees: 7, date: "Juillet 2019", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Devops", days: 9, trainees: 7, date: "Juillet à Aout 2019", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Dev mobile", days: 3, trainees: 1, date: "Septembre 2019", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Angular", days: 3, trainees: 1, date: "Octobre 2019", place: "Vitrolles", company: "Alten" },
+      { name: "Javascript", days: 4, trainees: 1, date: "Novembre 2019", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Javascript", days: 10, trainees: 7, date: "Novembre à Décembre 2019", place: "Toulon", company: "Marine Nationale Française" },
+      { name: "NodeJS & Angular", days: 5 + 19 + 20, trainees: 12, date: "Décembre 2019 à Février 202", place: "Aix", company: "Softeam" },
+      { name: "Angular", days: 5, trainees: 4, date: "Mars 2020", place: "Aix-en-Provence", company: "M2i" },
+      { name: "Angular", days: 5, trainees: 7, date: "Avril 2020", place: "Télétravail (covid oblige)", company: "" },
+      { name: "ReactJS", days: 3, trainees: 7, date: "Avril 2020", place: "Télétravail (covid oblige)", company: "" },
+      { name: "ReactJS & VueJS", days: 5, trainees: 4, date: "Mai 2020", place: "Télétravail (covid oblige)", company: "" },
+      { name: "ReactJS", days: 4, trainees: 10, date: "Juin 2020", place: "Télétravail (covid oblige)", company: "" },
+      { name: "Angular", days: 3, trainees: 6, date: "Juin 2020", place: "Télétravail (covid oblige)", company: "" },
     ]
 
 
@@ -404,11 +408,16 @@
     numbers.cursus = CURSUS.length
     numbers.coffee = numbers.days * 3 / 10
 
-    $('.count').each(function () {
-
-    });
-
-
+    let formations = CURSUS.map(c => `<li><strong>${c.name}</strong> : ${c.date} - ${c.place}</li>`)
+    $("#formations").html(formations)
+    $("#formations").hide()
+    $("#up").hide()
+    $("#toogleformations").click((e) => {
+      e.preventDefault();
+      $("#formations").toggle("slow");
+      $('#up').toggle();
+      $('#down').toggle();
+    })
     var win = $(window);
     var count = $(".count");
 
