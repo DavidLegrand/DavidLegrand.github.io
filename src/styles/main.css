@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colors */
+body {
+  color: theme("colors.neutral.600");
+  background-color: theme("colors.neutral.200");
+}
+
+#sideNav a:hover,
+.active,
+.secondary,
+a {
+  color: theme("colors.amber.600");
+}
+
+.social-icons a {
+  background-color: theme("colors.slate.900");
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+  background-color: theme("colors.amber.600");
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: theme("colors.amber.700");
+}
+
+hr {
+    border-color: theme("colors.neutral.300");
+    border-width: 0;
+    border-top-width: 1px;
+    border-style: solid;
+}
+.dev-icons .list-inline-item i:hover {
+  color: theme("colors.slate.900");
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.primary,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: theme("colors.slate.900");
+  font-family: theme("fontFamily.title");
+}
+
+.h1,
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+.h2,
+h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.h3,
+h3 {
+  font-size: 2rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.4rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}

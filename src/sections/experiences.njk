@@ -1,0 +1,19 @@
+---
+title: Expériences
+name: Expériences
+id: experiences
+permalink: false
+tags: sections
+order: 2
+---
+
+<ul>
+     {% for item in experiences.items %}
+     <li>
+          {{item.title}}
+          {{item.date}}
+          {{item.place}}
+          {{item.description}}
+     </li>
+     {% endfor %}
+</ul>

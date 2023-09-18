@@ -1,0 +1,18 @@
+---
+title: Formateur
+name: Formateur
+id: teacher
+permalink: false
+tags: sections
+order: 3
+---
+
+<p class="mb-5 col-12">En tant que développeur et ex-formateur, je suis opérationnel sur ces compétences :
+</p>
+<ul>
+     {% for item in skills.items %}
+          <li>
+               <a href="{{ item.link }}">{{ item.name }}</a>
+          </li>
+     {% endfor %}
+</ul>

@@ -1,0 +1,76 @@
+{
+    "main": [
+        {
+            "name": "JavaScript",
+            "years": 11,
+            "icon": "javascript"
+        },
+        {
+            "name": "React.JS",
+            "years": 5,
+            "icon": "react",
+            "ecosystem": [
+                "Redux",
+                "Next",
+                "Webpack",
+                "Styled Components",
+                "Jest",
+                "JAMstack"
+            ]
+        },
+        {
+            "name": "React Native",
+            "years": 2,
+            "icon": "react",
+            "ecosystem": [
+                "Mobx",
+                "Expo",
+                "Metro",
+                "Jest",
+                "Firebase"
+            ]
+        },
+        {
+            "name": "Vue.JS",
+            "years": 3,
+            "icon": "vuejs",
+            "ecosystem": [
+                "Vuex",
+                "Nuxt",
+                "Webpack",
+                "Vuetify",
+                "Jest"
+            ]
+        },
+        {
+            "name": "Node.JS",
+            "years": 2,
+            "icon": "nodejs",
+            "ecosystem": [
+                "Express",
+                "API REST",
+                "GraphQL",
+                "SQL (MongoDB, MySQL, Postgre)"
+            ]
+        }
+    ],
+    "other": {
+        "Soft Skills": [
+            {"name":"Leadership technique (ancien Formateur et lead dev)","icon":"fa-solid fa-person-chalkboard"},
+            {"name":"Orienté solutions et adepte de l'intelligence collective","icon":"fa-solid fa-people-group"},
+            {"name":"Optimiste, calme, analytique","icon":"fa-solid fa-thumbs-up"},
+            {"name":"Bon communiquant, oral et écrit","icon":"fa-regular fa-comments"}
+        ],
+        "Workflow": [
+            {"name":"Craft, pair programming, code review","icon":"fa-solid fa-hat-wizard"},
+            {"name":"Agile Developper (et ex SCRUM Master)","icon":"fa-solid fa-person-running"},
+            {"name":"Automated testing & debugging","icon":"fa-solid fa-bug-slash"},
+            {"name":"Sens UI/UX développé","icon":"fa-solid fa-palette"}
+        ],
+        "Langues": [
+            {"name":"Français (natif)"},
+            {"name":"Anglais (bilingue)"},
+            {"name":"Binaire (non, je plaisante...)"}
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+---
+title: Compétences
+name: Compétences
+id: skills
+permalink: false
+tags: sections
+order: 1
+---
+
+<p class="mb-10">En tant que développeur et ex-formateur, je suis opérationnel sur ces compétences :
+</p>
+<div class="mb-10">
+     <h3 class="">
+          <i class="devicon-javascript-plain "></i>
+          Développeur
+          <span class="secondary">JavaScript</span>
+          depuis
+          <span class="secondary">2015</span>
+     </h3>
+</div>
+<div class="grid grid-cols-4 gap-10 mb-10">
+     {% for item in skills.main %}
+          {% if loop.index0 > 0 %}
+               <div>
+                    <h3 class="">
+                         <i class="devicon-{{ item.icon }}-plain "></i>
+                         {{ item.name }}</h3>
+                    <p>Experience : {{ item.years }} ans</p>
+                    <ul class="pl-5">
+                         {% for ecosystem in item.ecosystem %}
+                              <li>{{ ecosystem }}</li>
+                         {% endfor %}
+                    </ul>
+               </div>
+          {% endif %}
+     {% endfor %}
+</div>
+<div class="grid grid-cols-3 gap-10 mb-10">
+     {% for key, val in skills.other %}
+          <div>
+               <h3>{{ key }}</h3>
+               <ul>
+                    {% for item in val %}
+                         <li><i class="{{item.icon}} mr-3"></i>{{ item.name }}</li>
+                    {% endfor %}
+               </ul>
+          </div>
+     {% endfor %}
+</div>

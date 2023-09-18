@@ -1,0 +1,24 @@
+{
+    "mail":{
+        "name": "contact@david-legrand.com",
+        "link": "mailto:contact@david-legrand.com"
+    },
+    "phone":{
+        "name": "06 28 56 04 89",
+        "link": "tel:+33628560489"
+    },
+    "items": [
+        {
+            "name": "contact@david-legrand.com",
+            "link": "mailto:contact@david-legrand.com"
+        },
+        {
+            "name": "Linkedin",
+            "link": "https://www.linkedin.com/in/david-legrand-71989688/"
+        },
+        {
+            "name": "Github",
+            "link": "https://github.com/DavidLegrand"
+        }
+    ]
+}

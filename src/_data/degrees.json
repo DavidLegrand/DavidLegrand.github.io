@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "title": "Licence informatique",
+            "place":"IUP CERI d'Avignon",
+            "description":"Programmation, réseau, développement Web",
+            "studies": "PHP, MySQL, PostgreSQL, Javascript, Ajax, HTML, CSS, C/C++, Unix",
+            "date":"2010"
+        },
+        {
+            "title": "DUT Statistiques et Informatique",
+            "place":"IUT d'Avignon",
+            "description":"Mathématiques, statistiques, probabilités, programmation",
+            "studies": "Perl, SQL, PHP, HTML, R, S-PLUS",
+            "date":"2008"
+        }
+    ]
+}

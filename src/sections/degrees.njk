@@ -1,0 +1,20 @@
+---
+title: Diplômes
+name: Diplômes
+id: degrees
+permalink: false
+tags: sections
+order: 4
+---
+
+<ul>
+     {% for item in degrees.items %}
+          <li>
+               {{ item.title }}
+               {{ item.date }}
+               {{ item.place }}
+               {{ item.description }}
+               {{ item.studies }}
+          </li>
+     {% endfor %}
+</ul>

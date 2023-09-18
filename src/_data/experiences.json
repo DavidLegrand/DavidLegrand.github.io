@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "title": "Développeur mobile Senior",
+            "place":"Kizeo - Avignon",
+            "description":"React Native",
+            "date":"Mars 2023 - Aujourd'hui"
+        },
+        {
+            "title": "Lead développeur front",
+            "place":"ACSEO - Aix en Provence",
+            "description":"Développeur React, VueJS, Node.js",
+            "date":"Novembre 2021 - Mars 2023"
+        },
+        {
+            "title": "Formateur JS Freelance",
+            "place":"Boreal Innovation - Marseille",
+            "description":"Formateur React, Angular, VueJS, Node.js, PHP, Wordpress, Agilité ...",
+            "date":"Septembre 2017 - Novembre 2021"
+        },
+        {
+            "title": "Développeur Fullstack Freelance",
+            "place":"Boreal Innovation - Marseille",
+            "description":"Développement React, Node.js, Express, MongoDB, PHP, MySQL, Wordpress ...",
+            "date":"Novembre 2015 - Novembre 2021"
+        },
+        {
+            "title": "Chef de projet",
+            "place":"Digimood - Marseille",
+            "description":"Gestion de projet, Référencement Naturel",
+            "date":"Avril 2014 - Octobre 2015"
+        },
+        {
+            "title": "Développeur Web & Consultant SEO",
+            "place":"Perfeo - Marseille",
+            "description":"Développement de sites Web, Référencement Naturel et gestion de projet",
+            "date":"Septembre 2011 - Mars 2014"
+        },
+        {
+            "title": "Développeur Web",
+            "place":"INFRASSUR - Aix en Provence",
+            "description":"Développement d'application ASP.NET",
+            "date":"Janvier 2011 - Juin 2011"
+        }
+    ]
+}
