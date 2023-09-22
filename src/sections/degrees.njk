@@ -1,5 +1,5 @@
 ---
-title: Diplômes
+title: "Diplômes"
 name: Diplômes
 id: degrees
 permalink: false
@@ -7,14 +7,31 @@ tags: sections
 order: 4
 ---
 
-<ul>
-     {% for item in degrees.items %}
-          <li>
-               {{ item.title }}
-               {{ item.date }}
-               {{ item.place }}
-               {{ item.description }}
-               {{ item.studies }}
-          </li>
-     {% endfor %}
-</ul>
+<div class="flex flex-col md:grid grid-cols-12">
+     <div class="flex md:contents">
+          {% for item in degrees.items %}
+               <div class="col-start-1 col-end-3 flex items-center ">
+                    <p class="h4">{{ item.date }}</p>
+               </div>
+               <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                         <div class="h-full w-1 bg-amber-600 pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-amber-600 shadow text-center">
+                         <i class="fas fa-check-circle text-white"></i>
+                    </div>
+               </div>
+               <div
+                    class="border-4 border-solid border-amber-600 col-start-4 col-end-13 p-4 rounded-xl {{ "
+                    mb-4" if loop.first else "
+                    my-4" }}  mr-auto shadow-md w-full">
+                    <div class="flex justify-between">
+                         <p class="h4">{{ item.title }}</p>
+                         <p class="font-bold">{{ item.place }}</p>
+                    </div>
+                    <p>{{ item.description }}</p>
+                    <p>{{ item.studies }}</p>
+               </div>
+          {% endfor %}
+     </div>
+</div>

@@ -7,43 +7,37 @@ tags: sections
 order: 1
 ---
 
-<p class="mb-10">En tant que développeur et ex-formateur, je suis opérationnel sur ces compétences :
-</p>
 <div class="mb-10">
      <h3 class="">
-          <i class="devicon-javascript-plain "></i>
           Développeur
           <span class="secondary">JavaScript</span>
           depuis
           <span class="secondary">2015</span>
      </h3>
 </div>
-<div class="grid grid-cols-4 gap-10 mb-10">
+<div class="columns-2">
      {% for item in skills.main %}
           {% if loop.index0 > 0 %}
-               <div>
-                    <h3 class="">
-                         <i class="devicon-{{ item.icon }}-plain "></i>
-                         {{ item.name }}</h3>
-                    <p>Experience : {{ item.years }} ans</p>
-                    <ul class="pl-5">
-                         {% for ecosystem in item.ecosystem %}
-                              <li>{{ ecosystem }}</li>
-                         {% endfor %}
-                    </ul>
-               </div>
-          {% endif %}
-     {% endfor %}
-</div>
-<div class="grid grid-cols-3 gap-10 mb-10">
-     {% for key, val in skills.other %}
-          <div>
-               <h3>{{ key }}</h3>
-               <ul>
-                    {% for item in val %}
-                         <li><i class="{{item.icon}} mr-3"></i>{{ item.name }}</li>
-                    {% endfor %}
-               </ul>
+               <div class="mb-4">
+                    <h3 class=""></i>
+                    <i class="fab fa-{{ item.icon }}"></i>
+                    {{ item.name }}</h3>
+               <p>Experience : {{ item.years }} ans</p>
+               {% for ecosystem in item.ecosystem %}
+                    {{ ecosystem }}{{ ", " if not loop.last else "" }}
+               {% endfor %}
           </div>
-     {% endfor %}
-</div>
+     {% endif %}
+{% endfor %}
+{% for key, val in skills.other %}
+     <div class="mb-4">
+          <p class="h3">{{ key }}</p>
+          <ul>
+               {% for item in val %}
+                    <li>
+                         <span class="w-4 mr-2">{{ item.icon }}</span>
+                         {{ item.name }}</li>
+               {% endfor %}
+          </ul>
+     </div>
+{% endfor %}</div>

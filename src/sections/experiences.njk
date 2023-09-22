@@ -7,13 +7,43 @@ tags: sections
 order: 2
 ---
 
-<ul>
-     {% for item in experiences.items %}
-     <li>
-          {{item.title}}
-          {{item.date}}
-          {{item.place}}
-          {{item.description}}
-     </li>
-     {% endfor %}
-</ul>
+<div class="flex flex-col md:grid grid-cols-12">
+     <div class="flex md:contents">
+          {% for item in experiences.items %}
+               <div class="col-start-1 col-end-3 flex items-center ">
+                    <p class="h4">{{ item.date }}</p>
+               </div>
+               <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                         <div class="h-full w-1 bg-amber-600 pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-amber-600 shadow text-center">
+                         <i class="fas fa-check-circle text-white"></i>
+                    </div>
+               </div>
+               <div
+                    class="border-4 border-solid border-amber-600 col-start-4 col-end-13 p-4 rounded-xl {{ "
+                    mb-4" if loop.first else "
+                    my-4" }}  mr-auto shadow-md w-full">
+                    <div class="flex justify-between">
+                         <h3 class="h4">{{ item.title }}</h2>
+                         <p class="font-bold">{{ item.place }}</p>
+                    </div>
+                    <p>{{ item.description }}</p>
+                    <p>
+                         <strong>Compétences :</strong>
+                         {{ item.skills }}</p>
+                    {% if item.project %}
+                         <p>
+                              <strong>Projet marquant :</strong>
+                              {{ item.project }}</p>
+                    {% endif %}
+                    {% if item.learned %}
+                         <p>
+                              <strong>Ce que j'en ai retiré :</strong>
+                              {{ item.learned }}</p>
+                    {% endif %}
+               </div>
+          {% endfor %}
+     </div>
+</div>

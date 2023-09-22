@@ -13,7 +13,7 @@ import '../styles/main.css';
     });
 
     window.onscroll = function () {
-        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollPosition = (document.documentElement.scrollTop || document.body.scrollTop) + window.innerHeight / 2
         for (i in sections) {
             if (sections[i] <= scrollPosition) {
                 document.querySelector('.active')?.classList.remove('active');

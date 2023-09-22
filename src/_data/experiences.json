@@ -1,46 +1,57 @@
 {
     "items": [
         {
-            "title": "Développeur mobile Senior",
-            "place":"Kizeo - Avignon",
-            "description":"React Native",
-            "date":"Mars 2023 - Aujourd'hui"
+            "title": "Développeur React Native Senior",
+            "place": "Kizeo - Avignon",
+            "description": "Fraichement débarqué dans le Vaucluse, j'ai saisi l'opportunité de rejoindre la Dev Team Kizeo.",
+            "date": "Mars 2023 - Aujourd'hui",
+            "skills": "React Native, Android, iOS, SCRUM",
+            "project": "Kizeo Forms, maintien et développement d'une application mobile de formulaires numériques hautement personalisés.",
+            "website": "https://www.kizeo.com/fr/",
+            "learned": ""
         },
         {
-            "title": "Lead développeur front",
-            "place":"ACSEO - Aix en Provence",
-            "description":"Développeur React, VueJS, Node.js",
-            "date":"Novembre 2021 - Mars 2023"
+            "title": "Lead développeur Vue.js",
+            "place": "ACSEO - Aix en Provence",
+            "description": "Entré en tant que lead Vue.JS on m'a donné la résponsabilité des choix techniques frontend. J'ai également eu l'occasion de devenir SCRUM Master de l'équipe. Une expérience riche en épanouissements, en expérimentations et sur le plan humain et technique.",
+            "skills": "Vue.js, Vuetify, Vuex, SCRUM",
+            "date": "Novembre 2021 - Mars 2023",
+            "project": "MobiPilot, création d'une application de gestion de flottes automobile from scratch",
+            "learned": "Le rôle de servant-leader agile, technique et humain"
         },
         {
-            "title": "Formateur JS Freelance",
-            "place":"Boreal Innovation - Marseille",
-            "description":"Formateur React, Angular, VueJS, Node.js, PHP, Wordpress, Agilité ...",
-            "date":"Septembre 2017 - Novembre 2021"
+            "title": "Formateur JS",
+            "place": "Freelance - Aix-Marseille",
+            "description": "Nombreux cursus dispensés parmi les entreprises qui m'ont fait confiance : Atos, Alten, Docaposte, Expedia, M2i, Proelan, Pro BTP, Softeam Institute ... avec plus de 200 apprennants formés durant 300 heures de cours.",
+            "skills": "Pédagogie, Rédaction de cours, Algorithmique, Javascript, React, VueJS, Angular, Node.js, Agilité ...",
+            "date": "Septembre 2017 - Novembre 2021",
+            "project": "J'ai eu le plaisir d'enseigner pour la Marine Nationnale.",
+            "learned": "Que j'adore transmettre, la patience, la pédagogie"
         },
         {
-            "title": "Développeur Fullstack Freelance",
-            "place":"Boreal Innovation - Marseille",
-            "description":"Développement React, Node.js, Express, MongoDB, PHP, MySQL, Wordpress ...",
-            "date":"Novembre 2015 - Novembre 2021"
+            "title": "Développeur Fullstack JS",
+            "place": "Freelance - Aix-Marseille",
+            "description": "Missions de freelancing variées, seul ou en petite équipe",
+            "skills": "React, Redux, Vue, Angular, Node.js, PHP, SCRUM (et tant et plus)",
+            "date": "Novembre 2015 - Novembre 2021",
+            "project": "Weekandgo, création d'une marketplace spécialisée dans les campings-car from scratch",
+            "learned": "Le gout du développement, l'équilibre vie professionnelle / personnelle"
         },
         {
-            "title": "Chef de projet",
-            "place":"Digimood - Marseille",
-            "description":"Gestion de projet, Référencement Naturel",
-            "date":"Avril 2014 - Octobre 2015"
+            "title": "Chef de projet SEO",
+            "place": "Digimood - Marseille",
+            "description": "Gestion de projet et optimisation du référencement Naturel pour des sites à fort trafic.",
+            "skills": "SEO, Gestion de projet",
+            "date": "Avril 2014 - Octobre 2015",
+            "learned": "La gestion de crise, l'effet Dunning-Kruger"
         },
         {
             "title": "Développeur Web & Consultant SEO",
-            "place":"Perfeo - Marseille",
-            "description":"Développement de sites Web, Référencement Naturel et gestion de projet",
-            "date":"Septembre 2011 - Mars 2014"
-        },
-        {
-            "title": "Développeur Web",
-            "place":"INFRASSUR - Aix en Provence",
-            "description":"Développement d'application ASP.NET",
-            "date":"Janvier 2011 - Juin 2011"
+            "place": "E+P (ex Perfeo) - Marseille",
+            "description": "Développement de sites Web vitrine et e-commerce, optimisation du référencement Naturel pour des sites à fort trafic et gestion de projet.",
+            "skills": "PHP, Wordpress, Prestashop, HTML, CSS, JavaScript, SEO",
+            "date": "Septembre 2011 - Mars 2014",
+            "learned": "La gestion de projet, le milieu de l'agence digitale, le SEO"
         }
     ]
 }

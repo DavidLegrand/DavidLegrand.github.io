@@ -1,9 +1,12 @@
-<nav class="fixed flex flex-col justify-center items-center content-between py-3 px-4 text-white bg-slate-900 top-0 h-screen w-[17rem]" id="sideNav">
-  <a class="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap js-scroll-trigger" href="#top">
-    <span class="block lg:hidden">David Legrand</span>
+<nav
+  class="fixed flex flex-col justify-center items-center content-between py-3 px-4 text-white bg-slate-900 top-0 h-screen
+    w-[17rem]"
+  id="sideNav">
+  <a class="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap js-scroll-trigger mb-10 " href="#top">
+    <h1 class="h4"><span class="block secondary lg:hidden">David Legrand</span></h1>
     <span class="hidden lg:block">
       <img
-        class="max-w-full h-auto img-profile rounded-full mx-auto mb-2 border-sold border-white border-2 max-w-[170px]"
+        class="max-w-full h-auto img-profile rounded-full mx-auto border-sold border-white border-2 max-w-[170px]"
         src="img/profile.bmp"
         alt="David Legrand, Lead developper JavaScript"></span>
     </a>
@@ -18,18 +21,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="items-center" id="navbarSupportedContent">
-      <ul>
-        <li class="">
-          <a class="uppercase font-normal text-slate-50 inline-block py-2 px-4 no-underline" href="#about">A propos</a>
-        </li>
-        {%- for section in collections.sections -%}
-          <li class="">
-            <a class="uppercase font-normal text-slate-50 inline-block py-2 px-4 no-underline" href="#{{ section.data.id }}">{{ section.data.name }}</a>
-          </li>
-        {%- endfor -%}
-        <li class="">
-          <a class="uppercase font-normal text-slate-50 inline-block py-2 px-4 no-underline" href="#cv">Télécharger le CV</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#about">A propos</a>
+      {%- for section in collections.sections -%}
+        <a
+          class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+            py-2 px-4 no-underline tracking-wider"
+          href="#{{ section.data.id }}">{{ section.data.name }}</a>
+      {%- endfor -%}
+      <a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
+          px-4 no-underline tracking-wider"
+        href="#cv">Télécharger le CV</a>
+    </ul>
+  </div>
+</nav>

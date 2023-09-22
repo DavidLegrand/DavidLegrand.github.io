@@ -5,7 +5,7 @@
 /* Colors */
 body {
   color: theme("colors.neutral.600");
-  background-color: theme("colors.neutral.200");
+  background: theme("colors.neutral.200");
 }
 
 #sideNav a:hover,
@@ -15,14 +15,8 @@ a {
   color: theme("colors.amber.600");
 }
 
-.social-icons a {
-  background-color: theme("colors.slate.900");
-}
-
-.social-icons a:hover,
-.social-icons a:focus,
-.social-icons a:active {
-  background-color: theme("colors.amber.600");
+.active {
+  background-color: theme("colors.slate.800");
 }
 
 a:hover,
@@ -32,13 +26,10 @@ a:active {
 }
 
 hr {
-    border-color: theme("colors.neutral.300");
-    border-width: 0;
-    border-top-width: 1px;
-    border-style: solid;
-}
-.dev-icons .list-inline-item i:hover {
-  color: theme("colors.slate.900");
+  border-color: theme("colors.neutral.300");
+  border-width: 0;
+  border-top-width: 1px;
+  border-style: solid;
 }
 
 .h1,
@@ -62,42 +53,24 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   line-height: 5.5rem;
 }
 
 .h2,
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   line-height: 4rem;
 }
 
 .h3,
 h3 {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
 }
 
 .h4,
 h4 {
-  font-size: 1.4rem;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  color: #ffffff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
 }

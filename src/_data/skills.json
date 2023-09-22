@@ -45,32 +45,67 @@
         {
             "name": "Node.JS",
             "years": 2,
-            "icon": "nodejs",
+            "icon": "node-js",
             "ecosystem": [
                 "Express",
                 "API REST",
                 "GraphQL",
-                "SQL (MongoDB, MySQL, Postgre)"
+                "MongoDB",
+                "MySQL",
+                "Postgre"
             ]
         }
     ],
     "other": {
         "Soft Skills": [
-            {"name":"Leadership technique (ancien Formateur et lead dev)","icon":"fa-solid fa-person-chalkboard"},
-            {"name":"Orienté solutions et adepte de l'intelligence collective","icon":"fa-solid fa-people-group"},
-            {"name":"Optimiste, calme, analytique","icon":"fa-solid fa-thumbs-up"},
-            {"name":"Bon communiquant, oral et écrit","icon":"fa-regular fa-comments"}
+            {
+                "name": "Leadership technique (ancien Formateur et lead dev)",
+                "icon": "👨‍🏫"
+            },
+            {
+                "name": "Orienté solutions et adepte de l'intelligence collective",
+                "icon": "🤝"
+            },
+            {
+                "name": "Optimiste, calme, analytique",
+                "icon": "🧘‍♂️"
+            },
+            {
+                "name": "Bon communiquant, oral et écrit",
+                "icon": "🗨️"
+            }
         ],
         "Workflow": [
-            {"name":"Craft, pair programming, code review","icon":"fa-solid fa-hat-wizard"},
-            {"name":"Agile Developper (et ex SCRUM Master)","icon":"fa-solid fa-person-running"},
-            {"name":"Automated testing & debugging","icon":"fa-solid fa-bug-slash"},
-            {"name":"Sens UI/UX développé","icon":"fa-solid fa-palette"}
+            {
+                "name": "Craft, pair programming, code review",
+                "icon": "🧙‍♂️"
+            },
+            {
+                "name": "Agile Developper (et ex SCRUM Master)",
+                "icon": "🏃‍♂️"
+            },
+            {
+                "name": "Automated testing & debugging",
+                "icon": "👨‍💻"
+            },
+            {
+                "name": "Sens UI/UX développé",
+                "icon": "🎨"
+            }
         ],
         "Langues": [
-            {"name":"Français (natif)"},
-            {"name":"Anglais (bilingue)"},
-            {"name":"Binaire (non, je plaisante...)"}
+            {
+                "name": "Français (natif)",
+                "icon": "🇫🇷"
+            },
+            {
+                "name": "Anglais (bilingue)",
+                "icon": "🇬🇧"
+            },
+            {
+                "name": "Binaire (non, je plaisante...)",
+                "icon": "🤖"
+            }
         ]
     }
 }
