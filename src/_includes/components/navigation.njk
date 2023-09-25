@@ -1,40 +1,48 @@
 <nav
   class="fixed flex flex-col justify-center items-center content-between py-3 px-4 text-white bg-slate-900 top-0 h-screen
-    w-[17rem]"
-  id="sideNav">
+    w-full sm:w-[17rem]"
+  role="navigation">
   <a class="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap js-scroll-trigger mb-10 " href="#top">
-    <h1 class="h4"><span class="block secondary lg:hidden">David Legrand</span></h1>
+    <h1 class="h4">
+      <span class="block secondary lg:hidden">David Legrand</span>
+    </h1>
     <span class="hidden lg:block">
       <img
         class="max-w-full h-auto img-profile rounded-full mx-auto border-sold border-white border-2 max-w-[170px]"
         src="img/profile.bmp"
         alt="David Legrand, Lead developper JavaScript"></span>
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="items-center" id="navbarSupportedContent">
+    <label class="cursor-pointer">
+      <input
+        type="checkbox"
+        data-toggle="collapse"
+        data-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"/>
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="hidden lg:block items-center" id="menu">
       <a
         class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
           py-2 px-4 no-underline tracking-wider"
-        href="#about">A propos</a>
+        href="#about">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card"></i>
+        A propos</a>
       {%- for section in collections.sections -%}
         <a
           class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
             py-2 px-4 no-underline tracking-wider"
-          href="#{{ section.data.id }}">{{ section.data.name }}</a>
+          href="#{{ section.data.id }}">
+          <i class="w-[1.2rem] opacity-50 fa-solid {{ section.data.icon }}"></i>
+          {{ section.data.name }}</a>
       {%- endfor -%}
       <a
         class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
           px-4 no-underline tracking-wider"
-        href="#cv">Télécharger le CV</a>
+        href="#cv">
+        <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
+        Télécharger le CV</a>
     </ul>
   </div>
 </nav>

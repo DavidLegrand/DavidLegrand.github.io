@@ -17,6 +17,11 @@ a {
 
 .active {
   background-color: theme("colors.slate.800");
+  font-weight: 800;
+}
+
+.active i {
+  opacity: 1 !important;
 }
 
 a:hover,
@@ -51,16 +56,29 @@ h6 {
   font-family: theme("fontFamily.title");
 }
 
+@media (min-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 8rem;
+    line-height: 5.5rem;
+  }
+  .h2,
+  h2 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+}
+
 .h1,
 h1 {
-  font-size: 8rem;
-  line-height: 5.5rem;
+  font-size: 4.4rem;
+  line-height: 3rem;
 }
 
 .h2,
 h2 {
-  font-size: 3.4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 2.5rem;
 }
 
 .h3,
@@ -73,4 +91,38 @@ h3 {
 h4 {
   font-size: 1.7rem;
   line-height: 2.2rem;
+}
+
+.h5,
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
+
+/* Ajoutez ces styles à votre CSS */
+.xp.read .date p,
+.xp.read .desc {
+  border-color: theme(
+    "colors.amber.600"
+  ); /* Couleur d'accentuation pour l'expérience active */
+  transform: scale(1.05); /* Agrandit l'expérience active */
+}
+.xp.unread .date p,
+.xp.unread .desc {
+  border-color: #e5e5e5; /* Couleur de bordure pour les expériences inactives */
+}
+
+.bottom-bar.passed,
+.xp.read .top-bar,
+.xp.read .check {
+  background-color: theme("colors.amber.600");
+}
+.bottom-bar,
+.xp.unread .top-bar,
+.xp.unread .check {
+  background-color: theme("colors.slate.900");
 }

@@ -1,24 +1,62 @@
 import '../styles/main.css';
 
-// Scrollspy
 (function () {
     'use strict';
 
-    var section = document.querySelectorAll("section");
-    var sections = {};
-    var i = 0;
+    const experiences = document.querySelectorAll('.xp');
+    const sections = document.querySelectorAll("section");
+    const windowHeight = window.innerHeight;
 
-    Array.prototype.forEach.call(section, function (e) {
-        sections[e.id] = e.offsetTop;
-    });
-
-    window.onscroll = function () {
-        var scrollPosition = (document.documentElement.scrollTop || document.body.scrollTop) + window.innerHeight / 2
-        for (i in sections) {
-            if (sections[i] <= scrollPosition) {
-                document.querySelector('.active')?.classList.remove('active');
-                document.querySelector('a[href*=' + i + ']').classList.add('active');
-            }
+    const activateExperience = experience => {
+        experience.classList.add('read');
+        experience.classList.remove('unread');
+        if (experience.classList.contains('read')) {
+            const bottomBar = experience?.previousElementSibling?.querySelector('.bottom-bar');
+            bottomBar?.classList.add('passed');
         }
     };
-})();  
+
+    const deactivateExperience = experience => {
+        if (experience.classList.contains('unread')) {
+            const bottomBar = experience?.previousElementSibling?.querySelector('.bottom-bar');
+            bottomBar?.classList.remove('passed');
+        }
+        experience.classList.remove('read');
+        experience.classList.add('unread');
+    };
+
+    const activateSection = section => {
+        document.querySelector('.active')?.classList.remove('active');
+        document.querySelector(`a[href*=${section.id}]`)?.classList.add('active');
+    }
+
+    const applyCallbackToElement  = (elementForTop, heightFactor, bellowCallback, aboveCallback = null) => {
+        if (elementForTop.getBoundingClientRect().top <= windowHeight * heightFactor) {
+            bellowCallback()
+        } else if(aboveCallback) {
+            aboveCallback()
+        }
+    }
+
+    const handleScroll = () => {
+        sections.forEach(section => {
+            applyCallbackToElement (
+                section,
+                0.5,
+                () => activateSection(section)
+                )
+        });
+        experiences.forEach(experience => {
+            applyCallbackToElement (
+                experience.lastElementChild,
+                0.4,
+                () => activateExperience(experience),
+                () => deactivateExperience(experience)
+            )
+
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+})();

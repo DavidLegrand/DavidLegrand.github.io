@@ -5,28 +5,33 @@ id: experiences
 permalink: false
 tags: sections
 order: 2
+icon: "fa-briefcase"
+
 ---
 
 <div class="flex flex-col md:grid grid-cols-12">
-     <div class="flex md:contents">
-          {% for item in experiences.items %}
-               <div class="col-start-1 col-end-3 flex items-center ">
-                    <p class="h4">{{ item.date }}</p>
+     {% for item in experiences.items %}
+          <div class="flex md:contents transition ease-in-out delay-50 duration-150 xp">
+               <div class="col-start-1 col-end-3 flex items-center date transition ease-in-out delay-50 duration-150 outline-none hidden md:visible">
+                    <p class="h5 border-2 border-solid border-slate-900 rounded-xl p-3 shadow-md w-full text-right ">{{ item.start }}<br/>{{ item.end }}</p>
                </div>
-               <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center">
-                         <div class="h-full w-1 bg-amber-600 pointer-events-none"></div>
+               <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative transition ease-in-out delay-50 duration-150">
+                    <div class="h-full w-6 flex items-center justify-center flex-col">
+                         <div class="h-3/6 w-1 bg-slate-900 pointer-events-none top-bar"></div>
+                         <div class="h-3/6 w-1 bg-slate-900 pointer-events-none bottom-bar"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-amber-600 shadow text-center">
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-slate-900 shadow-md text-center check">
                          <i class="fas fa-check-circle text-white"></i>
                     </div>
                </div>
                <div
-                    class="border-4 border-solid border-amber-600 col-start-4 col-end-13 p-4 rounded-xl {{ "
+                    class=" border-2 border-solid border-slate-900 col-start-4 col-end-13 p-4 shadow-md rounded-xl {{ "
                     mb-4" if loop.first else "
-                    my-4" }}  mr-auto shadow-md w-full">
+                    my-4" }} mr-auto w-full transition ease-in-out delay-50 duration-150 outline-none desc">
                     <div class="flex justify-between">
-                         <h3 class="h4">{{ item.title }}</h2>
+                         <h3 class="h4">{{ item.title }}
+                              {% for icon in item.icons %}<i class="fab fa-{{icon}}"></i>{% endfor %}
+                         </h3>
                          <p class="font-bold">{{ item.place }}</p>
                     </div>
                     <p>{{ item.description }}</p>
@@ -44,6 +49,6 @@ order: 2
                               {{ item.learned }}</p>
                     {% endif %}
                </div>
-          {% endfor %}
-     </div>
+          </div>
+     {% endfor %}
 </div>
