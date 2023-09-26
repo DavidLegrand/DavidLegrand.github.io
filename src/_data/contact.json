@@ -1,9 +1,9 @@
 {
-    "mail":{
+    "mail": {
         "name": "contact@david-legrand.com",
         "link": "mailto:contact@david-legrand.com"
     },
-    "phone":{
+    "phone": {
         "name": "06 28 56 04 89",
         "link": "tel:+33628560489"
     },
@@ -20,5 +20,13 @@
             "name": "Github",
             "link": "https://github.com/DavidLegrand"
         }
-    ]
+    ],
+    "cv": {
+        "name": "Télécharger le CV",
+        "link": "/img/CV-David-Legrand.pdf"
+    },
+    "printer": {
+        "name": "Printer friendly",
+        "link": ""
+    }
 }
