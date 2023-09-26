@@ -56,19 +56,6 @@ h6 {
   font-family: theme("fontFamily.title");
 }
 
-@media (min-width: 768px) {
-  .h1,
-  h1 {
-    font-size: 8rem;
-    line-height: 5.5rem;
-  }
-  .h2,
-  h2 {
-    font-size: 3.4rem;
-    line-height: 4rem;
-  }
-}
-
 .h1,
 h1 {
   font-size: 4.4rem;
@@ -103,26 +90,110 @@ p {
   margin-bottom: 0.25rem;
 }
 
-/* Ajoutez ces styles à votre CSS */
-.xp.read .date p,
-.xp.read .desc {
-  border-color: theme(
-    "colors.amber.600"
-  ); /* Couleur d'accentuation pour l'expérience active */
-  transform: scale(1.05); /* Agrandit l'expérience active */
+@media (min-width: 768px) {
+  .h1,
+  h1 {
+    font-size: 8rem;
+    line-height: 5.5rem;
+  }
+  .h2,
+  h2 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
 }
-.xp.unread .date p,
-.xp.unread .desc {
-  border-color: #e5e5e5; /* Couleur de bordure pour les expériences inactives */
+
+/* Ajoutez ces styles à votre CSS */
+
+.xp.read .date,
+.xp.read .desc {
+  transform: scale(1.05);
+}
+
+.bottom-bar,
+.top-bar {
+  background: linear-gradient(
+    to bottom,
+    theme("colors.amber.600") 50%,
+    theme("colors.slate.900") 0
+  );
+  background-size: 100% 200%;
+  background-position: bottom;
+}
+
+.top-bar {
+  transition: background-position 0.3s 0.3s ease;
+}
+.check {
+  transition: border-color 0.3s 0.6s ease, color 0.3s 0.6s ease;
+}
+.bottom-bar {
+  transition: background-position 0.3s ease;
+}
+
+.check {
+  border-color: theme("colors.slate.900");
+  color: theme("colors.slate.900");
+}
+
+.xp.read .check {
+  border-color: theme("colors.amber.600");
+  color: theme("colors.amber.600");
 }
 
 .bottom-bar.passed,
-.xp.read .top-bar,
-.xp.read .check {
-  background-color: theme("colors.amber.600");
+.xp.read .top-bar {
+  background-position: top;
 }
+/* 
 .bottom-bar,
-.xp.unread .top-bar,
-.xp.unread .check {
+.xp.unread .top-bar {
   background-color: theme("colors.slate.900");
+} */
+
+#toggle {
+  display: none;
+}
+
+#burger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 0px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#burger span:first-of-type {
+  transform-origin: 0% 0%;
+}
+
+#burger span:last-of-type {
+  transform-origin: 0% 100%;
+}
+
+#toggle:checked ~ #burger span {
+  opacity: 1;
+  transform: rotate(45deg) translate(1px, -2px);
+  /* background: #232323; */
+}
+#toggle:checked ~ #burger span:nth-of-type(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#toggle:checked ~ #burger span:last-of-type {
+  transform: rotate(-45deg) translate(-1px, 3px);
+}
+
+#toggle:checked ~ #menu {
+  display: block;
 }

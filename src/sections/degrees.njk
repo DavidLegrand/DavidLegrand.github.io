@@ -8,32 +8,47 @@ order: 4
 icon: "fa-graduation-cap"
 ---
 
-<div class="flex flex-col md:grid grid-cols-12">
-     {% for item in degrees.items %}
-          <div class="flex md:contents transition ease-in-out delay-50 duration-150 xp">
-               <div class="col-start-1 col-end-3 flex items-center date transition ease-in-out delay-50 duration-150 outline-none">
-                    <p class="h5 border-2 border-solid border-slate-900 rounded-xl p-3 shadow-md w-full text-right ">{{ item.date }}</p>
-               </div>
-               <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative transition ease-in-out delay-50 duration-150">
-                    <div class="h-full w-6 flex items-center justify-center flex-col">
-                         <div class="h-3/6 w-1 bg-slate-900 pointer-events-none top-bar"></div>
-                         <div class="h-3/6 w-1 bg-slate-900 pointer-events-none bottom-bar"></div>
+<div class="flex flex-col justify-center">
+     <div class="py-3 sm:mx-auto w-full px-2 sm:px-0">
+          <div
+               class="relative text-gray-700">
+               <!-- Left section, set by justify-start and sm:pr-8 -->
+               {% for item in degrees.items %}
+                    <div class="mt-6 sm:mt-0 {{ " pb-6 sm:pb-12" if not loop.last }} relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>{{ item.date }}</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
+                                   bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center transition check">
+                                   <i class="fa-solid fa-graduation-cap"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">{{ item.title }}</h3>
+                                                  <p class="font-bold sm:w-3/12">{{ item.place }}</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>{{ item.date }}</span>
+                                                  </div>
+                                             </div>
+                                             <p>{{ item.description }}</p>
+                                             <p>
+                                                  {{ item.studies }}</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-slate-900 shadow-md text-center check">
-                         <i class="fas fa-check-circle text-white"></i>
-                    </div>
-               </div>
-               <div
-                    class=" border-2 border-solid border-slate-900 col-start-4 col-end-13 p-4 shadow-md rounded-xl {{ "
-                    mb-4" if loop.first else "
-                    my-4" }} mr-auto w-full transition ease-in-out delay-50 duration-150 outline-none desc">
-                    <div class="flex justify-between">
-                         <h3 class="h4">{{ item.title }}</h2>
-                         <p class="font-bold">{{ item.place }}</p>
-                    </div>
-                    <p>{{ item.description }}</p>
-                    <p>{{ item.studies }}</p>
-               </div>
+               {% endfor %}
           </div>
-     {% endfor %}
+     </div>
 </div>

@@ -14,12 +14,12 @@ icon: "fa-phone"
 </p>
 <p>Et rien ne remplacera le contact humain.</p>
 <p class="mb-5">Aussi, je vous propose de ne pas en rester là :</p>
-<p class="h3 my-5 mx-auto md:mx-24 align-center"><a href="tel:+33628560489">06 28 56 04 89</a></p>
+<p class="h2 my-5 mx-auto md:mx-24"><a href="tel:+33628560489">06 28 56 04 89</a></p>
 <p>
      Et comme le téléphone c'est pas toujours possible, vous pouvez aussi me contacter ici :</p>
 <ul>
      {% for item in contact.items %}
-          <li class="h5">
+          <li class="h4 pt-2">
                <a  href="{{ item.link }}">{{ item.name }}</a>
           </li>
      {% endfor %}

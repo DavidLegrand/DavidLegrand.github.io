@@ -6,6 +6,7 @@ import '../styles/main.css';
     const experiences = document.querySelectorAll('.xp');
     const sections = document.querySelectorAll("section");
     const windowHeight = window.innerHeight;
+    const toggle = document.querySelector('#toggle')
 
     const activateExperience = experience => {
         experience.classList.add('read');
@@ -39,6 +40,8 @@ import '../styles/main.css';
     }
 
     const handleScroll = () => {
+
+        toggle.checked = false;
         sections.forEach(section => {
             applyCallbackToElement (
                 section,

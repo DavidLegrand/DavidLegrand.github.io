@@ -1,48 +1,55 @@
 <nav
-  class="fixed flex flex-col justify-center items-center content-between py-3 px-4 text-white bg-slate-900 top-0 h-screen
-    w-full sm:w-[17rem]"
+  class="fixed flex flex-wrap items-center content-center py-3 px-4 text-white bg-slate-900 top-0 md:h-screen w-full
+    md:w-[17rem] z-20"
   role="navigation">
-  <a class="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap js-scroll-trigger mb-10 " href="#top">
+  <input
+    name="toggle"
+    id="toggle"
+    type="checkbox"
+    data-toggle="collapse"
+    data-target="#menu"
+    aria-controls="menu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    autocomplete="off"/>
+  <label class="cursor-pointer md:hidden fixed top-0 left-0 p-[1rem]" id="burger" for="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <a class="whitespace-no-wrap js-scroll-trigger md:my-10 mx-auto" href="#top">
     <h1 class="h4">
-      <span class="block secondary lg:hidden">David Legrand</span>
+      <span class="block text-white md:hidden">David
+        <span class="secondary -ml-1">Legrand</span>
+      </span>
     </h1>
-    <span class="hidden lg:block">
+    <span class="hidden md:block">
       <img
         class="max-w-full h-auto img-profile rounded-full mx-auto border-sold border-white border-2 max-w-[170px]"
         src="img/profile.bmp"
-        alt="David Legrand, Lead developper JavaScript"></span>
-    </a>
-    <label class="cursor-pointer">
-      <input
-        type="checkbox"
-        data-toggle="collapse"
-        data-target="#menu"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"/>
-      <i class="fa-solid fa-bars"></i>
-    </label>
-    <div class="hidden lg:block items-center" id="menu">
+        alt="David Legrand, Lead developper JavaScript"/>
+    </span>
+  </a>
+  <div class="hidden md:block items-center transition grow-0 shrink-0 basis-full mt-6" id="menu">
+    <a
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+        py-2 px-4 no-underline tracking-wider"
+      href="#about">
+      <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card"></i>
+      A propos</a>
+    {%- for section in collections.sections -%}
       <a
         class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
           py-2 px-4 no-underline tracking-wider"
-        href="#about">
-        <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card"></i>
-        A propos</a>
-      {%- for section in collections.sections -%}
-        <a
-          class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
-            py-2 px-4 no-underline tracking-wider"
-          href="#{{ section.data.id }}">
-          <i class="w-[1.2rem] opacity-50 fa-solid {{ section.data.icon }}"></i>
-          {{ section.data.name }}</a>
-      {%- endfor -%}
-      <a
-        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
-          px-4 no-underline tracking-wider"
-        href="#cv">
-        <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
-        Télécharger le CV</a>
-    </ul>
+        href="#{{ section.data.id }}">
+        <i class="w-[1.2rem] opacity-50 fa-solid {{ section.data.icon }}"></i>
+        {{ section.data.name }}</a>
+    {%- endfor -%}
+    <a
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
+        px-4 no-underline tracking-wider"
+      href="#cv">
+      <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
+      Télécharger le CV</a>
   </div>
 </nav>
