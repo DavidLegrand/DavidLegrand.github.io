@@ -15,9 +15,9 @@ icon: "fa-briefcase"
                class="relative text-gray-700">
                <!-- Left section, set by justify-start and sm:pr-8 -->
                {% for item in experiences.items %}
-                    <div class="mt-6 sm:mt-0 {{ "pb-6 sm:pb-12" if not loop.last }} relative xp">
+                    <div class="mt-6 sm:mt-0 {{ " pb-6 sm:pb-12" if not loop.last }} relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>{{ item.start }}</span>
@@ -25,14 +25,13 @@ icon: "fa-briefcase"
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-{{ item.icon }}"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
