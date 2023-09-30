@@ -25,11 +25,15 @@
     aria-controls="menu"
     aria-expanded="false"
     aria-label="Toggle navigation"
-    autocomplete="off"/>
+    autocomplete="off"
+    class="hidden"/>
   <label class="cursor-pointer md:hidden fixed top-0 left-0 p-[1rem]" id="burger" for="toggle">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-top-left transition duration-500
+      ease-in-out delay-300"></span>
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-left transition duration-500
+      ease-in-out delay-300"></span>
+    <span class="block w-8 h-1 relative bg-gray-300 rounded-md origin-bottom-left transition duration-500
+      ease-in-out delay-300"></span>
   </label>
   <a class="whitespace-no-wrap js-scroll-trigger md:my-10 mx-auto" href="#top">
     <h1 class="h4">
@@ -78,7 +82,8 @@
         Contact</a><a
       class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
         px-4 no-underline tracking-wider"
-      href="/img/CV-David-Legrand.pdf" target="_blank">
+      href="/img/CV-David-Legrand.pdf"
+      target="_blank">
       <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
       Télécharger le CV</a>
   </div>
@@ -300,9 +305,9 @@
                class="relative text-gray-700">
                <!-- Left section, set by justify-start and sm:pr-8 -->
                
-                    <div class="mt-6 sm:mt-0 pb-6 sm:pb-12 relative xp">
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Mars 2023</span>
@@ -310,14 +315,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-react"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -344,9 +348,9 @@
                          </div>
                     </div>
                
-                    <div class="mt-6 sm:mt-0 pb-6 sm:pb-12 relative xp">
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Novembre 2021</span>
@@ -354,14 +358,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-vuejs"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -392,9 +395,9 @@
                          </div>
                     </div>
                
-                    <div class="mt-6 sm:mt-0 pb-6 sm:pb-12 relative xp">
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Septembre 2017</span>
@@ -402,14 +405,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-js"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -440,9 +442,9 @@
                          </div>
                     </div>
                
-                    <div class="mt-6 sm:mt-0 pb-6 sm:pb-12 relative xp">
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Novembre 2015</span>
@@ -450,14 +452,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-js"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -488,9 +489,9 @@
                          </div>
                     </div>
                
-                    <div class="mt-6 sm:mt-0 pb-6 sm:pb-12 relative xp">
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Avril 2014</span>
@@ -498,14 +499,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-google"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -534,7 +534,7 @@
                
                     <div class="mt-6 sm:mt-0  relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>Septembre 2011</span>
@@ -542,14 +542,13 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0 transform
-                                        -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fab fa-php"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
@@ -593,28 +592,28 @@
                
                     <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>2010</span>
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
-                                        transform -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fa-solid fa-graduation-cap"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
                                                   <h3 class="h4 sm:w-9/12 text-center sm:text-left">Licence informatique</h3>
                                                   <p class="font-bold sm:w-3/12">IUP CERI d&#39;Avignon</p>
                                                   <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
-                                                       <span>2010</span>
+                                                       <span></span>
+                                                       <span></span>
                                                   </div>
                                              </div>
                                              <p>Programmation, réseau, développement Web</p>
@@ -628,28 +627,28 @@
                
                     <div class="mt-6 sm:mt-0  relative xp">
                          <div class="flex flex-col sm:flex-row items-center">
-                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition date">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
                                    <div class="w-full sm:pr-8">
                                         <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
                                              <span>2008</span>
                                         </div>
                                    </div>
                               </div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 transition top-bar"></div>
-                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 transition
-                                   bottom-bar"></div>
-                              <div class="rounded-full bg-white border-4 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
-                                        transform -translate-x-1/2 flex items-center justify-center transition check">
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
                                    <i class="fa-solid fa-graduation-cap"></i>
                               </div>
-                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition desc">
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
                                                   <h3 class="h4 sm:w-9/12 text-center sm:text-left">DUT Statistiques et Informatique</h3>
                                                   <p class="font-bold sm:w-3/12">IUT d&#39;Avignon</p>
                                                   <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
-                                                       <span>2008</span>
+                                                       <span></span>
+                                                       <span></span>
                                                   </div>
                                              </div>
                                              <p>Mathématiques, statistiques, probabilités, programmation</p>
