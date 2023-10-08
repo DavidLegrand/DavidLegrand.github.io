@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ description }}">
     <meta name="author" content="{{ author }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="https://your-website.com/og-image.png">
+    <meta property="og:url" content="{{ url }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:url" content="https://your-website.com/twitter-image.png">
     <title>{{ title }}</title>
-    <link rel="canonical" href="https://www.david-legrand.com/"/>
+    <link rel="canonical" href="{{ url }}"/>
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" >
-    <body class="font-main antialiased" id="top">
-      {% include "../components/navigation.njk" %}
-      <main class="md:pl-[17rem] md:pt-0 pr-0 py-0">
-        {{ content|safe }}
-        {% include "../components/sectionslist.njk" %}
-      </main>
-      <script src="/assets/main.js"></script>
-    </body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+      rel="preload"
+      as="style">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" rel="preload" as="style">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+      rel="preload"
+      as="style">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
   </head>
+  <body class="font-main antialiased" id="top">
+    {% include "../components/navigation.njk" %}
+    <main class="md:pl-[17rem] md:pt-0 pr-0 py-0">
+      {{ content|safe }}
+      {% include "../components/sectionslist.njk" %}
+    </main>
+    <script src="/assets/main.js"></script>
+  </body>
 </html>

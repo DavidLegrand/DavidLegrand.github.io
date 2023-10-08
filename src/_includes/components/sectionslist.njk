@@ -1,9 +1,8 @@
 {%- for section in collections.sections -%}
-    <section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen" id="{{ section.data.id }}">
+    <section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="{{ section.data.id }}">
         <div class="w-sm-100">
-            <p class="h1 mb-10 !leading-none">{{ section.data.title }}</p>
+            <p class="h1 mb-10 !leading-none text-center">{{ section.data.title }}</p>
             {{ section.templateContent|safe }}
         </div>
     </section>
-    <hr />
 {%- endfor -%}

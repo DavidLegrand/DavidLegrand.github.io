@@ -6,8 +6,8 @@ import '../styles/main.css';
     const experiences = document.querySelectorAll('.xp');
     const sections = document.querySelectorAll("section");
     const windowHeight = window.innerHeight;
-    const toggle = document.querySelector('#toggle')
-
+    const toggle = document.querySelector('#toggle');
+    
     const activateExperience = experience => {
         experience.classList.add('read');
         experience.classList.remove('unread');
