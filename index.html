@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="David Legrand, CTO / Directeur technique chez Kizeo, ex Tech Lead et Développeur React, React Native, Vue.JS, Node.JS - Actuellement sur Avignon et alentours.">
+    <meta name="author" content="David Legrand">
+    <meta property="og:title" content="David Legrand ⚛️ CTO et Tech Lead - Avignon - React, Vue.js, Node.js">
+    <meta property="og:description" content="David Legrand, CTO / Directeur technique chez Kizeo, ex Tech Lead et Développeur React, React Native, Vue.JS, Node.JS - Actuellement sur Avignon et alentours.">
+    <meta property="og:image" content="https://your-website.com/og-image.png">
+    <meta property="og:url" content="https://www.david-legrand.com/">
+    <meta name="twitter:title" content="David Legrand ⚛️ CTO et Tech Lead - Avignon - React, Vue.js, Node.js">
+    <meta name="twitter:description" content="David Legrand, CTO / Directeur technique chez Kizeo, ex Tech Lead et Développeur React, React Native, Vue.JS, Node.JS - Actuellement sur Avignon et alentours.">
+    <meta name="twitter:url" content="https://your-website.com/twitter-image.png">
+    <meta name="google-site-verification" content="JlNpTiHO2Vx_q6BigAEadVdEB4U1Cit731IZZf4cTGA" />
+    <title>David Legrand ⚛️ CTO et Tech Lead - Avignon - React, Vue.js, Node.js</title>
+    <link rel="canonical" href="https://www.david-legrand.com/"/>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap"
+      rel="stylesheet"
+      rel="preload"
+      as="font">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,800&display=swap" rel="stylesheet" rel="preload" as="font">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+      rel="preload"
+      as="font">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+  </head>
+  <body class="font-main antialiased" id="top">
+    <nav
+  class="fixed flex flex-wrap items-center content-center py-3 px-4 text-white bg-slate-900 top-0 md:h-screen w-full
+    md:w-[17rem] z-20"
+  role="navigation">
+  <input
+    name="toggle"
+    id="toggle"
+    type="checkbox"
+    data-toggle="collapse"
+    data-target="#menu"
+    aria-controls="menu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    autocomplete="off"
+    class="hidden"/>
+  <label class="cursor-pointer md:hidden fixed top-0 left-0 p-[1rem]" id="burger" for="toggle">
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-top-left transition duration-500 ease-in-out
+      delay-300"></span>
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-left transition duration-500 ease-in-out delay-300"></span>
+    <span class="block w-8 h-1 relative bg-gray-300 rounded-md origin-bottom-left transition duration-500 ease-in-out delay-300"></span>
+  </label>
+  <a class="whitespace-no-wrap js-scroll-trigger md:my-10 mx-auto" href="#top">
+    <p class="h4 md:hidden">
+      <span class="block text-white">David
+        <span class="secondary -ml-1">Legrand</span>
+      </span>
+    </p>
+    <span class="hidden md:block">
+      <img
+        class="h-auto img-profile rounded-full mx-auto border-sold border-white border-2 max-w-[170px]"
+        src="img/profil.webp"
+        alt="David Legrand, Lead developper JavaScript"/>
+    </span>
+  </a>
+  <div class="hidden md:block items-center transition grow-0 shrink-0 basis-full mt-6" id="menu">
+    <a
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+        py-2 px-4 no-underline tracking-wider"
+      href="#about">
+      <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card"></i>
+      A propos</a><a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#skills">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-gears"></i>
+        Compétences</a><a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#experiences">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-briefcase"></i>
+        Expériences</a><a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#degrees">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-graduation-cap"></i>
+        Diplômes</a><a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#hobbies">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-icons"></i>
+        Centres d&#39;intérêt</a><a
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+          py-2 px-4 no-underline tracking-wider"
+        href="#contact">
+        <i class="w-[1.2rem] opacity-50 fa-solid fa-phone"></i>
+        Contact</a><a
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
+        px-4 no-underline tracking-wider"
+      href="/img/CV-David-Legrand.pdf"
+      target="_blank">
+      <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
+      Télécharger le CV</a>
+  </div>
+</nav>
+    <main class="md:pl-[17rem] md:pt-0 pr-0 py-0">
+      
+<section
+  class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen  mx-auto md:max-w-screen-lg"
+  id="about">
+  <h1 class="mb-0 text-center">David
+    <span class="secondary md:-ml-4">Legrand</span>
+  </h1>
+  <span class="mb-20 !text-[3.1rem] h4 md:h2 text-center">Accélérateur de croissance digitale</span>
+<h2 class="h3 mb-4 text-center">
+    CTO / Directeur Technique Kizeo</h2>
+  <p>Moi, c'est
+    <strong>David</strong>. Mon métier :
+    <strong>CTO</strong> (Chief Technical Officer / Directeur Technique).
+  </p>
+  <p>Digital native et touche-à-tout, je baigne dans le Web depuis l'enfance et j'en ai fait mon métier
+    <strong>depuis 2011</strong>.</p>
+  <p class="mb-4">Après avoir tour à tour endossé les rôles de développeur, <strong>tech lead</strong>, consultant, formateur, SCRUM
+    master... j'ai rejoint en 2023 l'éditeur logiciel SaaS Kizeo, sur Avignon au sein duquel j'ai endossé les responsabilités de <strong>CTO</strong>.</p>
+  <p>Mes objectifs principaux en ce moment :
+  </p>
+  <ul class="mb-4">
+    <li>Continuer d'apprendre et de grandir sur le plan technique et humain</li>
+    <li>Mettre à profit mon expertise technique pour aider mon équipe à relever tous les challenges à venir</li>
+    <li>Mettre à profit mon rôle de servant leader pour aider mon équipe à progresser à sur les plans technique, agile et
+      organisationnel.</li>
+  </ul>
+  <p class="h4 text-center">
+    <a href="tel:+33628560489">06 28 56 04 89</a>
+    ·
+    <a href="mailto:contact@david-legrand.com" class="d-inline-block">contact@david-legrand.com</a>
+  </p>
+</section>
+      <section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="skills">
+        <div class="w-sm-100">
+            <p class="h1 mb-10 !leading-none text-center">Compétences</p>
+            
+<div class="mb-10 grid grid-cols-3 md:gap-5">
+     <span class="h4 md:h3 inline md:text-right">
+          <span class="">Tech Lead</span>
+     </span>
+     <h2 class="h4 md:h3 inline md:text-center">
+          <span class="secondary">CTO</span>
+     </h2>
+     <span class="h4 md:h3 inline">
+          <span class="">Développeur</span>
+     </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+     <div class="p-4 bg-white rounded shadow hover:scale-110 transition duration-300 ease-in-out">
+     <p class="h4 mb-3">Workflow</p>
+     <ul>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">👨‍💻</span>
+                    Conception technique, architecture, refactoring</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🧙‍♂️</span>
+                    Craft, TDD, pair programming, code review</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🏃‍♂️</span>
+                    Agile Developper, SCRUM Master, eXtreme Programming</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">👨‍🔬</span>
+                    Non régression, QA, debugging, support technique</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🎨</span>
+                    Sens UI/UX développé, conception fonctionnelle</li>
+          
+     </ul>
+     <p class="h4 mt-5 mb-3">Langues</p>
+     <ul>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🇫🇷</span>
+                    Français (natif)</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🇬🇧</span>
+                    Anglais (bilingue)</li>
+          
+               <li class="mb-2">
+                    <span class="inline-block w-3 mr-2">🤖</span>
+                    Binaire (non, je plaisante...)</li>
+          
+     </ul>
+</div>
+<div class="p-4 bg-white rounded shadow scale-105 hover:scale-110 transition duration-300 ease-in-out">
+     <ul>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">💡</span><br/><strong>Stratégie technologique</strong>, gestion du changement, mise à l'échelle</li>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">🦸‍♂️</span><br/><strong>Leadership technique</strong>, gestion de projet Agile, amélioration continue</li>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">🤝</span><br/>RH, gestion de carrières, recrutement,
+          résolution de conflits</li>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">👨‍🏫</span><br/>Management 3.0, <strong>esprit d'équipe</strong>, intelligence collective</li>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">🧘‍♂️</span><br/>Optimiste, calme,
+          analytique, orienté solutions</li>
+          <li class="mb-2 text-center">
+               <span class="inline-block w-3">💬</span><br/>Bon communiquant, <strong>pédagogue</strong>, vulgarisateur</li>
+                  
+          
+     </ul>
+</div>
+
+     <div class="text-right p-4 bg-white rounded shadow hover:scale-110 transition duration-300 ease-in-out">
+          <p class="h4 mb-3">Langages & Frameworks</p>
+          
+                    <div class="mb-2">
+                         <strong class="h5">JavaScript <i class="fab fa-js animate-pulse" title="js"></i></strong>
+                    
+                         <p class="mb-0">7 ans d'expérience</p>
+                    
+                    <p class="mb-0">
+                         
+                    </p>
+               </div>
+     
+                    <div class="mb-2">
+                         <strong class="h5">React.JS <i class="fab fa-react animate-pulse" title="react"></i></strong>
+                    
+                         <p class="mb-0">5 ans d'expérience</p>
+                    
+                    <p class="mb-0">
+                         
+                              Redux, 
+                         
+                              Next, 
+                         
+                              Webpack, 
+                         
+                              Styled Components, 
+                         
+                              Jest, 
+                         
+                              JAMstack
+                         
+                    </p>
+               </div>
+     
+                    <div class="mb-2">
+                         <strong class="h5">React Native <i class="fab fa-react animate-pulse" title="react"></i></strong>
+                    
+                         <p class="mb-0">3 ans d'expérience</p>
+                    
+                    <p class="mb-0">
+                         
+                              MobX, 
+                         
+                              Expo, 
+                         
+                              Metro, 
+                         
+                              Jest, 
+                         
+                              Firebase
+                         
+                    </p>
+               </div>
+     
+                    <div class="mb-2">
+                         <strong class="h5">Vue.JS <i class="fab fa-vuejs animate-pulse" title="vuejs"></i></strong>
+                    
+                         <p class="mb-0">2 ans d'expérience</p>
+                    
+                    <p class="mb-0">
+                         
+                              Vuex, 
+                         
+                              Nuxt, 
+                         
+                              Webpack, 
+                         
+                              Vuetify, 
+                         
+                              Jest
+                         
+                    </p>
+               </div>
+     
+                    <div class="mb-2">
+                         <strong class="h5">Et aussi <i class="fab fa- animate-pulse" title=""></i></strong>
+                    
+                    <p class="mb-0">
+                         
+                              Maîtrise des systèmes d&#39;information, 
+                         
+                              Connaissance des nouvelles technologies, 
+                         
+                              Sécurité informatique
+                         
+                    </p>
+               </div>
+     
+</div>
+</div>
+        </div>
+    </section><section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="experiences">
+        <div class="w-sm-100">
+            <p class="h1 mb-10 !leading-none text-center">Expériences</p>
+            
+<div class="flex flex-col justify-center">
+     <div class="py-3 sm:mx-auto w-full px-2 sm:px-0">
+          <div
+               class="relative text-gray-700">
+               <!-- Left section, set by justify-start and sm:pr-8 -->
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Décembre 2023</span>
+                                             <span>Aujourd&#39;hui</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fas fa-user-tie"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">CTO</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">Kizeo - Avignon</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Décembre 2023</span>
+                                                       <span>Aujourd&#39;hui</span>
+                                                  </div>
+                                             </div>
+                                             <p>Après une expérience enrichissante en tant que Développeur Mobile, j’ai pris le rôle de CTO chez Kizeo. Je supervise désormais la stratégie technologique et la gestion de l’équipe technique dans un contexte de transformation organisationnelle et de mise à l&#39;échelle. En tant que membre du CODIR, je définis les choix technologiques et supervise la mise en œuvre des projets stratégiques.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  Stratégie, direction technique, gestion d&#39;équipe, leadership, transformation numérique, innovation, prise de décision, gestion du changement, vison technologique, agilité, RH</p>
+                                             
+                                                  <p>
+                                                       <strong>Projet marquant :</strong>
+                                                       Kizeo Forms (et d&#39;autres), j’ai piloté la réorganisation de l’équipe technique pour mieux répondre aux objectifs commerciaux et techniques de l’entreprise, optimiser la collaboration entre départements et industrialiser toujours plus nos process.</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       Déléguer, responsabiliser l&#39;équipe, la prise de décision collective éclairée, la gestion du changement ...</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Mars 2023</span>
+                                             <span>Décembre 2023</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fab fa-react"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">Développeur React Native Senior</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">Kizeo - Avignon</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Mars 2023</span>
+                                                       <span>Décembre 2023</span>
+                                                  </div>
+                                             </div>
+                                             <p>Fraichement débarqué dans le Vaucluse, j&#39;ai saisi l&#39;opportunité de rejoindre la Dev Team Kizeo.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  React Native, EXPO, développement mobile, applications SaaS B2B, iOS, Android, développement multiplateforme, SCRUM</p>
+                                             
+                                                  <p>
+                                                       <strong>Projet marquant :</strong>
+                                                       Kizeo Forms, développement et maintien d&#39;une application SaaS B2B mobile React Native de saisie de données terrain.</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       L&#39;excellence technique et la gestion du code legacy sur une application en production</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Novembre 2021</span>
+                                             <span>Mars 2023</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fab fa-vuejs"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">Lead développeur Vue.js</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">ACSEO - Aix en Provence</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Novembre 2021</span>
+                                                       <span>Mars 2023</span>
+                                                  </div>
+                                             </div>
+                                             <p>Entré en tant que lead Vue.JS on m&#39;a donné la responsabilité des choix techniques frontend. J&#39;ai également eu l&#39;occasion de devenir SCRUM Master de l&#39;équipe. Une expérience épanouissante, riche en expérimentations et sur le plan humain et technique.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  Vue.js, Vuetify, Vuex, SCRUM, architecture front-end, leadership agile</p>
+                                             
+                                                  <p>
+                                                       <strong>Projet marquant :</strong>
+                                                       MobiPilot, création d&#39;une application de gestion de flottes automobile from scratch</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       Le rôle de servant-leader agile, technique et humain</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Septembre 2017</span>
+                                             <span>Novembre 2021</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fas fa-chalkboard-user"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">Formateur JavaScript</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">Freelance - Aix-Marseille</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Septembre 2017</span>
+                                                       <span>Novembre 2021</span>
+                                                  </div>
+                                             </div>
+                                             <p>En tant que Formateur JS, j’ai dispensé plus de 300 heures de formation auprès d’entreprises telles que Atos, Alten, Docaposte, Expedia et de centres de formation reconnus (M2I, Softeam...) formant plus de 200 apprenants. Mes cours couvraient des technologies telles que JavaScript, React, Vue.js et Node.js. Mon approche pédagogique a permis à de nombreux apprenants d&#39;acquérir de nouvelles compétences ou d’améliorer leur maîtrise du développement. Le tout avec un taux de satisfaction moyen de 95%.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  Pédagogie, Rédaction de cours, Algorithmique, Javascript, React, VueJS, Angular, Node.js, Agilité ...</p>
+                                             
+                                                  <p>
+                                                       <strong>Projet marquant :</strong>
+                                                       J&#39;ai eu le plaisir d&#39;enseigner, entre autres, pour la Marine Nationnale Française. Le but étant de former des militaires pour qu&#39;ils puissent ensuite développer un simultateur de radar en JavaScript.</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       Que j&#39;adore transmettre, la patience, la pédagogie</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Novembre 2015</span>
+                                             <span>Novembre 2021</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fab fa-js"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">Développeur Fullstack JS</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">Freelance - Aix-Marseille</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Novembre 2015</span>
+                                                       <span>Novembre 2021</span>
+                                                  </div>
+                                             </div>
+                                             <p>Missions de freelancing variées, seul ou en petite équipe</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  React, Redux, Vue.js, Node.js, PHP, SCRUM React, développement web, architecture fullstack, gestion de projet, ecommerce (et tant et plus)</p>
+                                             
+                                                  <p>
+                                                       <strong>Projet marquant :</strong>
+                                                       Weekandgo, création d&#39;une marketplace spécialisée dans les campings-car from scratch</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       Le gout du développement, l&#39;équilibre vie professionnelle/personnelle</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Avril 2014</span>
+                                             <span>Octobre 2015</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fab fa-google"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <span class="h4 sm:w-9/12 text-center sm:text-left">Chef de projet SEO</span>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">Digimood - Marseille</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Avril 2014</span>
+                                                       <span>Octobre 2015</span>
+                                                  </div>
+                                             </div>
+                                             <p>Gestion de projet et optimisation du référencement naturel pour des sites à fort trafic.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  SEO, Gestion de projet</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       La gestion de crise, l&#39;effet Dunning-Kruger ;)</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>Septembre 2011</span>
+                                             <span>Mars 2014</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fab fa-php"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  
+                                                  <h3 class="h4 sm:w-9/12 text-center sm:text-left">Développeur Web &amp; Consultant SEO</h3>
+                                                  
+                                                  <p class="font-bold sm:w-3/12">E+P (ex Perfeo) - Marseille</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span>Septembre 2011</span>
+                                                       <span>Mars 2014</span>
+                                                  </div>
+                                             </div>
+                                             <p>Développement de sites Web vitrine et e-commerce, optimisation du référencement naturel pour des sites à fort trafic et gestion de projet.</p>
+                                             <p>
+                                                  <strong>Compétences :</strong>
+                                                  Développement Web Fullstack, PHP, Wordpress, HTML, CSS, JavaScript, SEO</p>
+                                             
+                                             
+                                                  <p>
+                                                       <strong>Ce que j'en ai retiré :</strong>
+                                                       La gestion de projet, le milieu de l&#39;agence digitale, le SEO</p>
+                                             
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+          </div>
+     </div>
+</div>
+        </div>
+    </section><section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="degrees">
+        <div class="w-sm-100">
+            <p class="h1 mb-10 !leading-none text-center">Diplômes</p>
+            
+<div class="flex flex-col justify-center">
+     <div class="py-3 sm:mx-auto w-full px-2 sm:px-0">
+          <div
+               class="relative text-gray-700">
+               <!-- Left section, set by justify-start and sm:pr-8 -->
+               
+                    <div class="mt-6 sm:mt-0  pb-6 sm:pb-12 relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>2010</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fa-solid fa-graduation-cap"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  <span class="h4 sm:w-9/12 text-center sm:text-left">Licence informatique</span>
+                                                  <p class="font-bold sm:w-3/12">IUP CERI d&#39;Avignon</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span></span>
+                                                       <span></span>
+                                                  </div>
+                                             </div>
+                                             <p>Programmation, réseau, développement Web</p>
+                                             <p>
+                                                  PHP, MySQL, PostgreSQL, Javascript, Ajax, HTML, CSS, C/C++, Unix</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+                    <div class="mt-6 sm:mt-0  relative xp">
+                         <div class="flex flex-col sm:flex-row items-center">
+                              <div class="hidden sm:flex justify-start w-3/12 mx-auto items-center transition-transform date">
+                                   <div class="w-full sm:pr-8">
+                                        <div class="p-4 bg-white rounded shadow font-bold flex flex-col justify-between sm:text-sm md:text-base">
+                                             <span>2008</span>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%-8px)] top-0 left-1/4 transform -translate-x-1/2 top-bar"></div>
+                              <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
+                              <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
+                                        transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
+                                   <i class="fa-solid fa-graduation-cap"></i>
+                              </div>
+                              <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
+                                   <div class="w-full sm:pl-8">
+                                        <div class="p-4 bg-white rounded shadow">
+                                             <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  <span class="h4 sm:w-9/12 text-center sm:text-left">DUT Statistiques et Informatique</span>
+                                                  <p class="font-bold sm:w-3/12">IUT d&#39;Avignon</p>
+                                                  <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
+                                                       <span></span>
+                                                       <span></span>
+                                                  </div>
+                                             </div>
+                                             <p>Mathématiques, statistiques, probabilités, programmation</p>
+                                             <p>
+                                                  Perl, SQL, PHP, HTML, R, S-PLUS</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               
+          </div>
+     </div>
+</div>
+        </div>
+    </section><section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="hobbies">
+        <div class="w-sm-100">
+            <p class="h1 mb-10 !leading-none text-center">Centres d&#39;intérêt</p>
+            
+<p class="mb-3">En dehors de mon rôle de développeur, j'ai - il faut se rendre à l'évidence - une âme d'artiste. Un
+     petit apperçu de ce qui me passionne :
+</p>
+<ul>
+     <li class="mb-2">
+          <i class="mr-2 fa-solid fa-palette"></i>Bassiste, compositeur, peintre et dessinateur. J'aime l'art. Tant sa folie
+               créative que la discipline requise pour explorer ces différents modes d'expression.
+     </li>
+     <li class="mb-2">
+          <i class="mr-2 fa-brands fa-fort-awesome"></i>L'époque médiévale, c'est mon truc, mais plutôt que de la lire, je préfère
+               la vivre : Je suis dans une troupe de Reconstitution historique et je pratique les Arts Martiaux Historiques Européens
+               en association.
+     </li>
+     <li class="mb-2">
+          <i class="mr-2 fa-solid fa-hat-wizard"></i>
+     </i>Je suis également un grand amateur des cultures de l'imaginaire et de ludisme. Adèpte des jeux de rôle, de plateau,
+     et de murder party. Je pense qu'on peut apprendre de nombreuses choses à grâce au jeu : improvisation, résolution de
+     problèmes, collaboration...
+</li>
+<li class="mb-2">
+     <i class="mr-2 fa-solid fa-gears"></i>Et au delà de jouer, je suis en train de donner vie à plusieurs plusieurs projets
+          de jeux. Pour ne citer que ceux-là : un escape game, une murder party, mon propre jeu de rôle ... Je suis tout autant
+          intéressé par l'aspect narratif, la création d'histoire et de scénarios, que par l'aspect ludique de la création de
+          règles et d'énigmes.
+</li></ul>
+        </div>
+    </section><section class="flex flex-col pt-20 p-5 md:p-10 justify-center align-items-center w-100 min-h-screen mx-auto md:max-w-screen-lg" id="contact">
+        <div class="w-sm-100">
+            <p class="h1 mb-10 !leading-none text-center">On s&#39;prend un café ?☕</p>
+            
+<p>Enfin, parce que j'aurais beau faire un CV fun, sympa, responsive, user friendly,
+     gourmand-croquant... ça reste une page web.
+</p>
+<p>Et rien ne remplacera le contact humain.</p>
+<p class="mb-5">Aussi, je vous propose de ne pas en rester là :</p>
+<p class="h2 my-5 mx-auto md:mx-24"><a href="tel:+33628560489">06 28 56 04 89</a></p>
+<p>
+     Et comme le téléphone c'est pas toujours possible, vous pouvez aussi me contacter ici :</p>
+<ul>
+     
+          <li class="h4 pt-2">
+               <a  href="mailto:contact@david-legrand.com">contact@david-legrand.com</a>
+          </li>
+     
+          <li class="h4 pt-2">
+               <a  href="https://www.linkedin.com/in/david-legrand-71989688/">Linkedin</a>
+          </li>
+     
+          <li class="h4 pt-2">
+               <a  href="https://github.com/DavidLegrand">Github</a>
+          </li>
+     
+     <li class="h4 pt-2">
+               <a  href="/img/CV-David-Legrand.pdf">Télécharger le CV</a> <span class="h5">
+          </li>
+</ul>
+        </div>
+    </section>
+    </main>
+    <script src="/assets/main.js"></script>
+  </body>
+</html>
