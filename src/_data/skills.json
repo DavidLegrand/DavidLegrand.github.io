@@ -1,13 +1,27 @@
 {
-    "main": [
+    "hard": [
         {
             "name": "JavaScript",
-            "years": 11,
-            "icon": "javascript"
+            "years": [
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023
+            ],
+            "icon": "js"
         },
         {
             "name": "React.JS",
-            "years": 5,
+            "years": [
+                2017,
+                2018,
+                2019,
+                2020,
+                2021
+            ],
             "icon": "react",
             "ecosystem": [
                 "Redux",
@@ -20,10 +34,14 @@
         },
         {
             "name": "React Native",
-            "years": 2,
+            "years": [
+                2020,
+                2021,
+                2023
+            ],
             "icon": "react",
             "ecosystem": [
-                "Mobx",
+                "MobX",
                 "Expo",
                 "Metro",
                 "Jest",
@@ -32,7 +50,10 @@
         },
         {
             "name": "Vue.JS",
-            "years": 3,
+            "years": [
+                2021,
+                2022
+            ],
             "icon": "vuejs",
             "ecosystem": [
                 "Vuex",
@@ -43,69 +64,74 @@
             ]
         },
         {
-            "name": "Node.JS",
-            "years": 2,
-            "icon": "node-js",
+            "name": "Et aussi",
             "ecosystem": [
-                "Express",
-                "API REST",
-                "GraphQL",
-                "MongoDB",
-                "MySQL",
-                "Postgre"
+                "Maîtrise des systèmes d'information",
+                "Connaissance des nouvelles technologies",
+                "Sécurité informatique"
             ]
         }
     ],
-    "other": {
-        "Soft Skills": [
-            {
-                "name": "Leadership technique (ancien Formateur et lead dev)",
-                "icon": "👨‍🏫"
-            },
-            {
-                "name": "Orienté solutions, résolution de conflits et intelligence collective",
-                "icon": "🤝"
-            },
-            {
-                "name": "Optimiste, calme, analytique",
-                "icon": "🧘‍♂️"
-            },
-            {
-                "name": "Bon communiquant, oral et écrit",
-                "icon": "🗨️"
-            }
-        ],
-        "Workflow": [
-            {
-                "name": "Craft, pair programming, code review",
-                "icon": "🧙‍♂️"
-            },
-            {
-                "name": "Agile Developperb SCRUM Master, amélioration continue",
-                "icon": "🏃‍♂️"
-            },
-            {
-                "name": "Tests automatisés, TDD & debugging",
-                "icon": "👨‍💻"
-            },
-            {
-                "name": "Sens UI/UX développé",
-                "icon": "🎨"
-            }
-        ],
-        "Langues": [
-            {
-                "name": "Français (natif)",
-                "icon": "🇫🇷"
-            },
-            {
-                "name": "Anglais (bilingue)",
-                "icon": "🇬🇧"
-            },
-            {
-                "name": "Binaire (non, je plaisante...)",
-                "icon": "🤖"
-            }
-        ]
-    }
+    "soft": [
+        {
+            "name": "Stratégie technologique, gestion du changement, mise à l'échelle",
+            "icon": "💡"
+        },
+        {
+            "name": "Leadership technique, gestion de projet Agile, amélioration continue",
+            "icon": "🦸‍♂️"
+        },
+        {
+            "name": "RH, gestion de carrières, recrutement, résolution de conflits",
+            "icon": "🤝"
+        },
+        {
+            "name": "Management 3.0, esprit d'équipe, intelligence collective",
+            "icon": "👨‍🏫"
+        },
+        {
+            "name": "Optimiste, calme, analytique, orienté solutions",
+            "icon": "🧘‍♂️"
+        },
+        {
+            "name": "Bon communiquant, pédagogue, vulgarisateur",
+            "icon": "💬"
+        }
+    ],
+    "others": [
+        {
+            "name": "Conception technique, architecture, refactoring",
+            "icon": "👨‍💻"
+        },
+        {
+            "name": "Craft, TDD, pair programming, code review",
+            "icon": "🧙‍♂️"
+        },
+        {
+            "name": "Agile Developper, SCRUM Master, eXtreme Programming",
+            "icon": "🏃‍♂️"
+        },
+        {
+            "name": "Non régression, QA, debugging, support technique",
+            "icon": "👨‍🔬"
+        },
+        {
+            "name": "Sens UI/UX développé, conception fonctionnelle",
+            "icon": "🎨"
+        }
+    ],
+    "languages": [
+        {
+            "name": "Français (natif)",
+            "icon": "🇫🇷"
+        },
+        {
+            "name": "Anglais (bilingue)",
+            "icon": "🇬🇧"
+        },
+        {
+            "name": "Binaire (non, je plaisante...)",
+            "icon": "🤖"
+        }
+    ]
 }

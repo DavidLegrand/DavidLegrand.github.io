@@ -1,69 +1,89 @@
 {
     "items": [
         {
+            "title": "CTO",
+            "place": "Kizeo - Avignon",
+            "description": "Après une expérience enrichissante en tant que Développeur Mobile, j’ai pris le rôle de CTO chez Kizeo. Je supervise désormais la stratégie technologique et la gestion de l’équipe technique dans un contexte de transformation organisationnelle et de mise à l'échelle. En tant que membre du CODIR, je définis les choix technologiques et supervise la mise en œuvre des projets stratégiques.",
+            "start": "Décembre 2023",
+            "end": "Aujourd'hui",
+            "skills": "Stratégie, direction technique, gestion d'équipe, leadership, transformation numérique, innovation, prise de décision, gestion du changement, vison technologique, agilité, RH",
+            "icon": "fas fa-user-tie",
+            "project": "Kizeo Forms (et d'autres), j’ai piloté la réorganisation de l’équipe technique pour mieux répondre aux objectifs commerciaux et techniques de l’entreprise, optimiser la collaboration entre départements et industrialiser toujours plus nos process.",
+            "website": "https://www.kizeo.com/fr/",
+            "learned": "Déléguer, responsabiliser l'équipe, la prise de décision collective éclairée, la gestion du changement ...",
+            "hn":true
+        },
+        {
             "title": "Développeur React Native Senior",
             "place": "Kizeo - Avignon",
             "description": "Fraichement débarqué dans le Vaucluse, j'ai saisi l'opportunité de rejoindre la Dev Team Kizeo.",
             "start": "Mars 2023",
-            "end": "Aujourd'hui",
-            "skills": "React Native, Android, iOS, SCRUM",
-            "icon": "react",
-            "project": "Kizeo Forms, maintien et développement d'une application mobile de formulaires numériques hautement personalisés.",
-            "website": "https://www.kizeo.com/fr/",
-            "learned": ""
+            "end": "Décembre 2023",
+            "skills": "React Native, EXPO, développement mobile, applications SaaS B2B, iOS, Android, développement multiplateforme, SCRUM",
+            "icon": "fab fa-react",
+            "project": "Kizeo Forms, développement et maintien d'une application SaaS B2B mobile React Native de saisie de données terrain.",
+            "website": "https://www.kizeo-forms.com/fr/",
+            "learned": "L'excellence technique et la gestion du code legacy sur une application en production",
+            "hn":true
         },
         {
             "title": "Lead développeur Vue.js",
             "place": "ACSEO - Aix en Provence",
-            "description": "Entré en tant que lead Vue.JS on m'a donné la résponsabilité des choix techniques frontend. J'ai également eu l'occasion de devenir SCRUM Master de l'équipe. Une expérience épanouissante, riche en expérimentations et sur le plan humain et technique.",
-            "skills": "Vue.js, Vuetify, Vuex, SCRUM",
-            "icon": "vuejs",
+            "description": "Entré en tant que lead Vue.JS on m'a donné la responsabilité des choix techniques frontend. J'ai également eu l'occasion de devenir SCRUM Master de l'équipe. Une expérience épanouissante, riche en expérimentations et sur le plan humain et technique.",
+            "skills": "Vue.js, Vuetify, Vuex, SCRUM, architecture front-end, leadership agile",
+            "icon": "fab fa-vuejs",
             "start": "Novembre 2021",
             "end": "Mars 2023",
             "project": "MobiPilot, création d'une application de gestion de flottes automobile from scratch",
-            "learned": "Le rôle de servant-leader agile, technique et humain"
+            "learned": "Le rôle de servant-leader agile, technique et humain",
+            "hn":true
         },
         {
-            "title": "Formateur JS",
+            "title": "Formateur JavaScript",
             "place": "Freelance - Aix-Marseille",
-            "description": "Nombreux cursus dispensés parmi les entreprises qui m'ont fait confiance : Atos, Alten, Docaposte, Expedia, M2i, Proelan, Pro BTP, Softeam Institute ... avec plus de 200 apprennants formés durant 300 heures de cours.",
+            "description": "En tant que Formateur JS, j’ai dispensé plus de 300 heures de formation auprès d’entreprises telles que Atos, Alten, Docaposte, Expedia et de centres de formation reconnus (M2I, Softeam...) formant plus de 200 apprenants. Mes cours couvraient des technologies telles que JavaScript, React, Vue.js et Node.js. Mon approche pédagogique a permis à de nombreux apprenants d'acquérir de nouvelles compétences ou d’améliorer leur maîtrise du développement. Le tout avec un taux de satisfaction moyen de 95%.",
             "skills": "Pédagogie, Rédaction de cours, Algorithmique, Javascript, React, VueJS, Angular, Node.js, Agilité ...",
-            "icon": "js",
+            "icon": "fas fa-chalkboard-user",
             "start": "Septembre 2017",
             "end": "Novembre 2021",
-            "project": "J'ai eu le plaisir d'enseigner pour la Marine Nationnale.",
-            "learned": "Que j'adore transmettre, la patience, la pédagogie"
+            "project": "J'ai eu le plaisir d'enseigner, entre autres, pour la Marine Nationnale Française. Le but étant de former des militaires pour qu'ils puissent ensuite développer un simultateur de radar en JavaScript.",
+            "learned": "Que j'adore transmettre, la patience, la pédagogie",
+            "hn":true
         },
         {
             "title": "Développeur Fullstack JS",
             "place": "Freelance - Aix-Marseille",
             "description": "Missions de freelancing variées, seul ou en petite équipe",
-            "skills": "React, Redux, Vue, Node.js, PHP, SCRUM (et tant et plus)",
-            "icon": "js",
+            "skills": "React, Redux, Vue.js, Node.js, PHP, SCRUM React, développement web, architecture fullstack, gestion de projet, ecommerce (et tant et plus)",
+            "icon": "fab fa-js",
             "start": "Novembre 2015",
             "end": "Novembre 2021",
             "project": "Weekandgo, création d'une marketplace spécialisée dans les campings-car from scratch",
-            "learned": "Le gout du développement, l'équilibre vie professionnelle/personnelle"
+            "learned": "Le gout du développement, l'équilibre vie professionnelle/personnelle",
+            "hn":true
+            
         },
         {
             "title": "Chef de projet SEO",
             "place": "Digimood - Marseille",
             "description": "Gestion de projet et optimisation du référencement naturel pour des sites à fort trafic.",
             "skills": "SEO, Gestion de projet",
-            "icon": "google",
+            "icon": "fab fa-google",
             "start": "Avril 2014",
             "end": "Octobre 2015",
-            "learned": "La gestion de crise, l'effet Dunning-Kruger"
+            "learned": "La gestion de crise, l'effet Dunning-Kruger ;)",
+            "hn":false
         },
         {
             "title": "Développeur Web & Consultant SEO",
             "place": "E+P (ex Perfeo) - Marseille",
             "description": "Développement de sites Web vitrine et e-commerce, optimisation du référencement naturel pour des sites à fort trafic et gestion de projet.",
-            "skills": "PHP, Wordpress, Prestashop, HTML, CSS, JavaScript, SEO",
-            "icon": "php",
+            "skills": "Développement Web Fullstack, PHP, Wordpress, HTML, CSS, JavaScript, SEO",
+            "icon": "fab fa-php",
             "start": "Septembre 2011",
             "end": "Mars 2014",
-            "learned": "La gestion de projet, le milieu de l'agence digitale, le SEO"
+            "learned": "La gestion de projet, le milieu de l'agence digitale, le SEO",
+            "hn":true
         }
     ]
 }

@@ -29,13 +29,17 @@ icon: "fa-briefcase"
                               <div class="hidden sm:block w-1 absolute h-[calc(50%+8px)] top-[calc(50%-8px)] left-1/4 transform -translate-x-1/2 bottom-bar"></div>
                               <div class="rounded-full bg-white border-4 border-slate-900 color-slate-900 w-8 h-8 absolute left-1/2 sm:left-1/4 -translate-y-6 z-10 sm:translate-y-0
                                         transform -translate-x-1/2 flex items-center justify-center delay-100 sm:delay-200 check">
-                                   <i class="fab fa-{{ item.icon }}"></i>
+                                   <i class="{{ item.icon }}"></i>
                               </div>
                               <div class="flex justify-end w-full sm:w-9/12 mx-auto items-center transition-transform desc">
                                    <div class="w-full sm:pl-8">
                                         <div class="p-4 bg-white rounded shadow">
                                              <div class="flex flex-col sm:flex-row justify-between items-center">
+                                                  {% if item.hn %}
                                                   <h3 class="h4 sm:w-9/12 text-center sm:text-left">{{ item.title }}</h3>
+                                                  {% else %}
+                                                  <span class="h4 sm:w-9/12 text-center sm:text-left">{{ item.title }}</span>
+                                                  {% endif %}
                                                   <p class="font-bold sm:w-3/12">{{ item.place }}</p>
                                                   <div class="sm:hidden py-2 w-full font-bold flex justify-between sm:text-sm md:text-base">
                                                        <span>{{ item.start }}</span>

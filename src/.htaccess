@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif|bmp|js|webp|css|pdf|txt|woff|ttf|ico|webmanifest) [NC]
+RewriteRule $ https://www.david-legrand.com/ [R=301,L] 
