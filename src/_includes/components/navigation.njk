@@ -13,13 +13,12 @@
     aria-label="Toggle navigation"
     autocomplete="off"
     class="hidden"/>
-  <label class="cursor-pointer md:hidden fixed top-0 left-0 p-[1rem]" id="burger" for="toggle">
-    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-top-left transition duration-500 ease-in-out
-      delay-300"></span>
-    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-left transition duration-500 ease-in-out delay-300"></span>
-    <span class="block w-8 h-1 relative bg-gray-300 rounded-md origin-bottom-left transition duration-500 ease-in-out delay-300"></span>
+  <label class="cursor-pointer md:hidden fixed top-0 left-0 p-[1rem] z-30" id="burger" for="toggle" aria-label="Menu de navigation">
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-top-left transition duration-300 ease-in-out"></span>
+    <span class="block w-8 h-1 mb-1.5 relative bg-gray-300 rounded-md origin-left transition duration-300 ease-in-out"></span>
+    <span class="block w-8 h-1 relative bg-gray-300 rounded-md origin-bottom-left transition duration-300 ease-in-out"></span>
   </label>
-  <a class="whitespace-no-wrap js-scroll-trigger md:my-10 mx-auto" href="#top">
+  <a class="whitespace-no-wrap js-scroll-trigger md:my-10 mx-auto" href="#top" aria-label="Retour en haut de page">
     <p class="h4 md:hidden">
       <span class="block text-white">David
         <span class="secondary -ml-1">Legrand</span>
@@ -34,25 +33,29 @@
   </a>
   <div class="hidden md:block items-center transition grow-0 shrink-0 basis-full mt-6" id="menu">
     <a
-      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 uppercase font-normal text-slate-50
         py-2 px-4 no-underline tracking-wider"
-      href="#about">
-      <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card"></i>
+      href="#about"
+      aria-label="Section À propos">
+      <i class="w-[1.2rem] opacity-50 fa-solid fa-address-card" aria-hidden="true"></i>
       A propos</a>
     {%- for section in collections.sections -%}
       <a
-        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none mb-2 uppercase font-normal text-slate-50
+        class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 uppercase font-normal text-slate-50
           py-2 px-4 no-underline tracking-wider"
-        href="#{{ section.data.id }}">
-        <i class="w-[1.2rem] opacity-50 fa-solid {{ section.data.icon }}"></i>
+        href="#{{ section.data.id }}"
+        aria-label="Section {{ section.data.name }}">
+        <i class="w-[1.2rem] opacity-50 fa-solid {{ section.data.icon }}" aria-hidden="true"></i>
         {{ section.data.name }}</a>
     {%- endfor -%}
     <a
-      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none uppercase font-normal text-slate-50 py-2
+      class="block rounded hover:bg-slate-800 active:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 uppercase font-normal text-slate-50 py-2
         px-4 no-underline tracking-wider"
       href="/img/CV-David-Legrand.pdf"
-      target="_blank">
-      <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf"></i>
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Télécharger le CV au format PDF">
+      <i class="w-[1.2rem] fa-solid opacity-50 fa-file-pdf" aria-hidden="true"></i>
       Télécharger le CV</a>
   </div>
 </nav>

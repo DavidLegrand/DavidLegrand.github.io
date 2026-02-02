@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.vscode/
+.idea/
+
+# Build outputs (on conserve les fichiers buildés pour GitHub Pages)
+# assets/main.css
+# assets/main.js
+# index.html

@@ -1,0 +1,32 @@
+{
+  "name": "davidlegrand-cv",
+  "version": "2.0.0",
+  "description": "Site CV de David Legrand - CTO chez Kizeo",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "dev:eleventy": "eleventy --serve --watch",
+    "dev:postcss": "postcss src/styles/main.css --dir assets --watch",
+    "build": "npm-run-all build:*",
+    "build:eleventy": "eleventy",
+    "build:postcss": "NODE_ENV=production postcss src/styles/main.css --dir assets",
+    "clean": "rm -rf _site assets/main.css assets/main.js"
+  },
+  "keywords": [
+    "cv",
+    "portfolio",
+    "eleventy",
+    "tailwindcss"
+  ],
+  "author": "David Legrand",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "esbuild": "^0.19.8",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.3.6"
+  }
+}
